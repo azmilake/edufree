@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 import EastIcon from '@mui/icons-material/East';
 import StarRateIcon from '@mui/icons-material/StarRate';
@@ -15,7 +16,6 @@ import 'swiper/css/pagination';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import NavBottom from '../components/NavigationBottom';
-import { useEffect } from 'react';
 
 const testimonials = [
   {
@@ -118,7 +118,7 @@ const Home = () => {
       <Navigation />
 
       {/* section header */}
-      <section className="w-full bg-black h-[580px] flex justify-between items-center text-white font-poppins p-5 lg:p-0">
+      <section className="w-full bg-black h-[580px] flex justify-between items-center text-white font-poppins px-1 lg:px-0">
         <div className="container mx-auto flex justify-between items-center">
           <div className="w-full px-5 lg:px-0 lg:w-6/12 flex flex-col">
             <h1 className="font-semibold lg:text-[42px] mb-8 text-3xl leading-snug">
@@ -131,7 +131,7 @@ const Home = () => {
             </p>
             <span className="flex gap-8 items-center">
               <Link to="/courses">
-                <button className="px-10 py-3 bg-color1 rounded text-black text-base flex-shrink-0">
+                <button className="px-8 lg:px-10 py-3 bg-color1 rounded text-black text-base flex-shrink-0">
                   Lihat Kursus
                 </button>
               </Link>
@@ -154,25 +154,31 @@ const Home = () => {
         <div className="w-full container mx-auto flex md:flex-col lg:flex-row items-center md:gap-x-36 flex-col gap-y-5 md:gap-y-0">
           <div className="flex md:space-x-4 md:justify-center md:mb-6 gap-x-4 ml-6 md:ml-0 lg:flex-shrink-0">
             <span className="flex flex-col p-3 lg:p-0">
-              <h3 className="font-semibold text-3xl md:text-[32px] lg:mb-3">
+              <h3 className="font-semibold text-md md:text-[32px] lg:mb-3">
                 21.000+
               </h3>
-              <p className="text-base text-gray-500">Siswa terdaftar</p>
+              <p className="text-sm md:text-base text-gray-500">
+                Siswa terdaftar
+              </p>
             </span>
             <span className="flex flex-col p-3 lg:p-0">
-              <h3 className="font-semibold text-3xl md:text-[32px] lg:mb-3">
+              <h3 className="font-semibold text-md md:text-[32px] lg:mb-3">
                 100+
               </h3>
-              <p className="text-base text-gray-500">Instruktur Ahli</p>
+              <p className="text-sm md:text-base text-gray-500">
+                Instruktur Ahli
+              </p>
             </span>
             <span className="flex flex-col p-3 lg:p-0">
-              <h3 className="font-semibold text-3xl md:text-[32px] lg:mb-3">
+              <h3 className="font-semibold text-md md:text-[32px] lg:mb-3">
                 150+
               </h3>
-              <p className="text-base text-gray-500">Kursus Gratis</p>
+              <p className="text-sm lg:text-base text-gray-500">
+                Kursus Gratis
+              </p>
             </span>
           </div>
-          <div className="md:flex md:justify-center md:scale-75 lg:scale-100 md:space-x-2 flex flex-row scale-75 justify-center gap-x-4 lg:gap-x-0 px-3">
+          <div className="md:flex md:justify-center scale-50 md:scale-75 lg:scale-100 md:space-x-2 flex flex-row justify-center gap-x-4 lg:gap-x-0 px-3">
             <img src="/images/partner1.svg" alt="partner1" />
             <img src="/images/partner2.svg" alt="partner2" />
             <img src="/images/partner3.svg" alt="partner3" />
@@ -183,7 +189,7 @@ const Home = () => {
       </section>
 
       {/* section benefit */}
-      <section className="container mx-auto font-poppins mb-36 px-5 lg:px-0">
+      <section className="container mx-auto font-poppins mb-20 lg:mb-36 px-5 lg:px-0">
         <div className="flex justify-center">
           <h1 className="text-center font-semibold text-2xl md:text-[38px] md:w-[640px] mb-5 lg:mb-16 p-5 lg:p-0 leading-snug">
             Keuntungan Bergabung Dengan E-Learning EDUFREE
@@ -193,7 +199,7 @@ const Home = () => {
         <div className="flex flex-col gap-y-5 p-5 lg:p-0">
           <div className="flex gap-x-12 md:flex-col lg:flex-row flex-col gap-y-5 mb-5 justify-between">
             <div className="w-full flex">
-              <div className="md:w-full h-[316px] bg-color3 flex flex-col p-12">
+              <div className="md:w-full h-full md:h-[316px] bg-color3 flex flex-col p-12">
                 <img
                   src="/images/benefit-icon1.jpg"
                   alt="benefit1"
@@ -201,15 +207,17 @@ const Home = () => {
                   height={40}
                   className="mb-5"
                 />
-                <h1 className="text-2xl font-medium mb-3">Kursus Gratis</h1>
-                <p className="text-base text-gray-500 leading-relaxed">
+                <h1 className="text-xl md:text-2xl font-medium mb-3">
+                  Kursus Gratis
+                </h1>
+                <p className="text-sm md:text-base text-gray-500 leading-relaxed">
                   Kami menyediakan beberapa kursus gratis untuk menunjang
                   ketersediaan pendidikan untuk masyarakat kurang mampu
                 </p>
               </div>
             </div>
             <div className="w-full flex">
-              <div className="md:full h-[316px] bg-color3 flex flex-col p-12">
+              <div className="md:full h-full md:h-[316px] bg-color3 flex flex-col p-12">
                 {' '}
                 <img
                   src="/images/benefit-icon2.jpg"
@@ -218,15 +226,17 @@ const Home = () => {
                   height={40}
                   className="mb-5"
                 />
-                <h1 className="text-2xl font-medium mb-3">Akses Selamanya</h1>
-                <p className="text-base text-gray-500 leading-relaxed">
+                <h1 className="text-xl md:text-2xl font-medium mb-3">
+                  Akses Selamanya
+                </h1>
+                <p className="text-sm md:text-base text-gray-500 leading-relaxed">
                   Semua kursus yang telah kamu daftar bisa diakses selamanya
                   sehingga belajar kamu lebih nyaman dan tidak terburu-buru
                 </p>
               </div>
             </div>
             <div className="w-full flex">
-              <div className="md:full h-[316px] bg-color3 flex flex-col p-12">
+              <div className="md:full h-full md:h-[316px] bg-color3 flex flex-col p-12">
                 {' '}
                 <img
                   src="/images/benefit-icon3.jpg"
@@ -235,8 +245,10 @@ const Home = () => {
                   height={40}
                   className="mb-5"
                 />
-                <h1 className="text-2xl font-medium mb-3">Grup Konsultasi</h1>
-                <p className="text-base text-gray-500 leading-relaxed">
+                <h1 className="text-xl md:text-2xl font-medium mb-3">
+                  Grup Konsultasi
+                </h1>
+                <p className="text-sm md:text-base text-gray-500 leading-relaxed">
                   Terdapat grup konsultasi yang berguna jika kamu ingin
                   menanyakan suatu pertanyaan dan kamu juga bisa mebuka diskusi
                   baru
@@ -247,7 +259,7 @@ const Home = () => {
 
           <div className="flex gap-x-12 md:flex-col lg:flex-row flex-col gap-y-5 -mt-5">
             <div className="w-full flex justify-evenly">
-              <div className="md:full h-[316px] bg-color3 flex flex-col p-12">
+              <div className="md:full h-full md:h-[316px] bg-color3 flex flex-col p-12">
                 <img
                   src="/images/benefit-icon4.jpg"
                   alt="benefit1"
@@ -255,17 +267,17 @@ const Home = () => {
                   height={40}
                   className="mb-5"
                 />
-                <h1 className="text-2xl font-medium mb-3">
+                <h1 className="text-xl md:text-2xl font-medium mb-3">
                   Sertifikat dan Portofolio
                 </h1>
-                <p className="text-base text-gray-500 leading-relaxed">
+                <p className="text-sm md:text-base text-gray-500 leading-relaxed">
                   Setelah menyelesaikan kursus kamu akan mendapatkan sertifikat
                   serta portofolio dari project kursus yang telah diselesaikan
                 </p>
               </div>
             </div>
             <div className="w-full flex justify-evenly">
-              <div className="md:full h-[316px] bg-color3 flex flex-col p-12">
+              <div className="md:full h-full md:h-[316px] bg-color3 flex flex-col p-12">
                 {' '}
                 <img
                   src="/images/benefit-icon5.jpg"
@@ -274,17 +286,17 @@ const Home = () => {
                   height={40}
                   className="mb-5"
                 />
-                <h1 className="text-2xl font-medium mb-3">
+                <h1 className="text-xl md:text-2xl font-medium mb-3">
                   Belajar Lebih Terarah
                 </h1>
-                <p className="text-base text-gray-500 leading-relaxed">
+                <p className="text-sm md:text-base text-gray-500 leading-relaxed">
                   Kursus menyediakan kursus dari level dasar hingga expert
                   sehingga semua bisa belajar dengan layanan yang kami sediakan
                 </p>
               </div>
             </div>
             <div className="w-full flex justify-evenly">
-              <div className="md:full h-[316px] bg-color3 flex flex-col p-12">
+              <div className="md:full h-full md:h-[316px] bg-color3 flex flex-col p-12">
                 {' '}
                 <img
                   src="/images/benefit-icon6.jpg"
@@ -293,10 +305,10 @@ const Home = () => {
                   height={40}
                   className="mb-5"
                 />
-                <h1 className="text-2xl font-medium mb-3">
+                <h1 className="text-xl md:text-2xl font-medium mb-3">
                   Instruktur Berpengalaman
                 </h1>
-                <p className="text-base text-gray-500 leading-relaxed">
+                <p className="text-sm md:text-base text-gray-500 leading-relaxed">
                   Kami mempunyai instruktur berpengalaman yang diambil dari
                   dunia industri yang tak diragukan lagi pengalamannya
                 </p>
@@ -307,7 +319,7 @@ const Home = () => {
       </section>
 
       {/* section tentang kami */}
-      <section className="container mx-auto font-poppins mb-36 px-5 lg:px-0">
+      <section className="container mx-auto font-poppins mb-20 lg:mb-36 px-5 lg:px-0">
         <div className="flex justify-between items-center flex-col lg:flex-row lg:space-x-10">
           <div className="flex flex-col w-full lg:w-1/2 md:justify-center md:text-center md:items-center lg:text-left lg:items-start">
             <h3 className="text-lg text-gray-600 mb-4 p-5 lg:p-0">
@@ -349,15 +361,15 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="flex justify-between lg:mt-16 mt-5 flex-col lg:flex-row">
+        <div className="flex justify-between lg:mt-16 mt-5 flex-col lg:flex-row gap-0 lg:gap-10">
           {courses.map((course) => (
             <Link key={course.id} to="/courses/detail">
               <div className="card w-full rounded-none mb-5 lg:mb-0">
-                <figure className="-mx-3">
+                <figure className="lg:-mx-3">
                   <img
                     src={course.photo}
                     alt={course.title}
-                    className="w-full md:p-5 px-3"
+                    className="w-full md:p-5 px-5 lg:px-3"
                   />
                 </figure>
                 <div className="card-body p-5">
@@ -558,7 +570,7 @@ const Home = () => {
         </div>
 
         <div className="w-full h-full lg:h-[700px] bg-black text-white">
-          <div className="flex flex-col justify-center p-24">
+          <div className="flex flex-col justify-center p-10 lg:p-24">
             <div className="">
               <h2 className="text-[28px] font-semibold mb-4">
                 Daftarkan Dirimu!
@@ -600,7 +612,7 @@ const Home = () => {
           <h1 className="text-3xl md:text-[38px] font-semibold mb-4 md:mb-0">
             Blog, Berita dan Event
           </h1>
-          <Link to="" className="text-base text-gray-600">
+          <Link to="/blogs" className="text-base text-gray-600">
             Lihat Semua <EastIcon />
           </Link>
         </div>

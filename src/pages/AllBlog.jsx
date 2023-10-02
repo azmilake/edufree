@@ -44,7 +44,7 @@ const AllBlogs = () => {
           <div className="lg:mb-10 -mb-36">
             <input
               type="email"
-              className="form-input px-4 py-3 rounded-lg lg:w-[746px] bg-white border border-gray-700/60 text-xl pl-8 mb-10 lg:mb-0"
+              className="form-input md:px-4 py-3 rounded-lg w-full lg:w-[746px] bg-white border border-gray-700/60 lg:text-xl text-lg pl-4 lg:pl-8 mb-10 lg:mb-0 px-5"
               placeholder="Cari Blog, Event atau Berita..."
             />
           </div>
@@ -107,10 +107,12 @@ const AllBlogs = () => {
             <Link to="/blog">
               <div className="flex justify-between md:mb-[47px]">
                 <div className="flex flex-col">
-                  <h2 className="text-xl font-medium lg:w-[340px] h-full">
+                  <h2 className="text-md lg:text-xl font-medium lg:w-[340px] h-full">
                     Mudah dalam membuat website tanpa coding
                   </h2>
-                  <p className="text-lg text-gray-500">1 Februari 2023</p>
+                  <p className="text-sm lg:text-lg text-gray-500">
+                    1 Februari 2023
+                  </p>
                 </div>
                 <div className="">
                   <img
@@ -123,10 +125,12 @@ const AllBlogs = () => {
             <Link to="/blog">
               <div className="flex justify-between md:mb-[47px]">
                 <div className="flex flex-col">
-                  <h2 className="text-xl font-medium lg:w-[340px] h-full">
+                  <h2 className="text-md lg:text-xl font-medium lg:w-[340px] h-full">
                     Pelajari Alur Pembuatan Sebuah Design Product
                   </h2>
-                  <p className="text-lg text-gray-500">4 Maret 2023</p>
+                  <p className="text-sm lg:text-lg text-gray-500">
+                    4 Maret 2023
+                  </p>
                 </div>
                 <div className="">
                   <img
@@ -139,10 +143,12 @@ const AllBlogs = () => {
             <Link to="/blog">
               <div className="flex justify-between md:mb-[47px]">
                 <div className="flex flex-col">
-                  <h2 className="text-xl font-medium lg:w-[340px] h-full">
+                  <h2 className="text-md lg:text-xl font-medium lg:w-[340px] h-full">
                     Apa yang harus diperesiapkan untuk melamar pekerjaan
                   </h2>
-                  <p className="text-lg text-gray-500">10 April 2023</p>
+                  <p className="text-sm lg:text-lg text-gray-500">
+                    10 April 2023
+                  </p>
                 </div>
                 <div className="">
                   <img
@@ -155,10 +161,12 @@ const AllBlogs = () => {
             <Link to="/blog">
               <div className="flex justify-between">
                 <div className="flex flex-col">
-                  <h2 className="text-xl font-medium lg:w-[340px] h-full">
+                  <h2 className="text-md lg:text-xl font-medium lg:w-[340px] h-full">
                     Pekerjaan bidang tekonolgi yang bisa didapatkan tanpa kuliah
                   </h2>
-                  <p className="text-lg text-gray-500">4 Juni 2023</p>
+                  <p className="text-sm lg:text-lg text-gray-500">
+                    4 Juni 2023
+                  </p>
                 </div>
                 <div className="">
                   <img
@@ -172,7 +180,7 @@ const AllBlogs = () => {
         </div>
 
         <Link to="/blog">
-          <div className="flex flex-wrap mb-20 lg:mt-24 md:mt-52">
+          <div className="flex flex-wrap mb-20 lg:mt-24 md:mt-20">
             {blogItems.map((blog) => (
               <div
                 className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 mb-12"

@@ -91,10 +91,10 @@ const DetailCourse = () => {
 
         <div className="flex flex-col justify-center items-center mb-52 p-5 lg:p-0">
           <div className="mb-20">
-            <h1 className="text-2xl lg:text-[42px] font-semibold lg:w-[700px] w-[400px] mx-auto text-center mb-3 leading-snug">
+            <h1 className="text-2xl lg:text-[42px] font-semibold lg:w-[700px] w-[400px] mx-auto text-center mb-3 leading-snug px-5 lg:px-0">
               Jangan Lewatkan Kesempatan Mari Ciptakan Sesuatu!
             </h1>
-            <p className="text-base font-medium text-center text-gray-500">
+            <p className="text-base font-medium text-center text-gray-500 px-5 lg:px-0">
               Yu akses kelas gratisnya, dengan cara klik button dibawah ini
             </p>
           </div>

@@ -11,7 +11,7 @@ const Footer = () => {
               Bangun dan wujudkan cita bersama edufree
             </p>
           </div>
-          <div className="w-2/3 md:w-[420px] h-full lg:h-[88px] bg-color1 flex text-black justify-between p-5 rounded-md">
+          <div className="w--full md:w-[420px] h-full lg:h-[88px] bg-color1 flex text-black justify-between p-5 rounded-md">
             <span className="flex flex-col">
               <p className="mb-1 text-base lg:text-[18px] font-medium">Email</p>
               <p className="text-sm lg:text-base text-gray-700">

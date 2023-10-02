@@ -45,7 +45,7 @@ const Blog = () => {
       <section className="w-full lg:w-[855px] mx-auto font-poppins flex flex-col justify-center items-center px-5 lg:px-0">
         <div className="flex flex-col mb-12">
           <div>
-            <p className="flex justify-center flex-col text-base text-gray-500 leading-relaxed mb-20">
+            <p className="flex justify-center flex-col text-base text-gray-500 leading-relaxed mb-20 px-5 lg:px-0">
               Sebelum mengetahui cara belajar pemrograman, ketahui terlebih
               dahulu apa arti kata pemrograman. Pemrograman adalah penggunaan
               satu atau lebih algoritma untuk menjadi bahasa pemrograman yang

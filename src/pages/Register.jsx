@@ -48,7 +48,7 @@ const Login = () => {
         </div>
 
         <div className="w-full h-full lg:h-[700px] bg-black text-white">
-          <div className="flex flex-col justify-center p-24">
+          <div className="flex flex-col justify-center p-8 lg:p-24">
             <div className="">
               <h2 className="text-[28px] font-semibold mb-4">Register</h2>
               <p className="text-base text-gray-500 w-full lg:w-[430px] mb-12">
