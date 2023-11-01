@@ -418,13 +418,17 @@ const Home = () => {
             <div className="">
               <Swiper
                 spaceBetween={30}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
                 pagination={{
                   clickable: true,
                   renderBullet: function (index, className) {
                     return (
                       '<span class="' +
                       className +
-                      '" style="background-color: black; width: 15px; height: 15px; margin-left: 10px;"></span>'
+                      '" style="background-color: black; width: 15px; height: 15px; margin-left: 10px; diplay:none;"></span>'
                     );
                   },
                 }}
